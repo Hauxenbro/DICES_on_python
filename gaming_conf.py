@@ -93,10 +93,10 @@ class Main_data:
             self.activate_bet_100()
             self.activate_bet_250()
             self.activate_bet_500()
-            self.activate_bet_1000()
+            self.inactivate_bet_1000()
             self.activate_bet_all()
             self.update()
-        elif self.pl_bank < 1000 and self.bot_current_bank < 1000 and self.pl_bank > 500 and self.bot_current_bank> 500:
+        elif self.pl_bank >= 500 and self.bot_current_bank >= 500:
             self.activate_bet_10()
             self.activate_bet_50()
             self.activate_bet_100()
@@ -105,16 +105,7 @@ class Main_data:
             self.inactivate_bet_1000()
             self.activate_bet_all()
             self.update()
-        elif self.pl_bank <= 500 and self.bot_current_bank <= 500 and self.pl_bank > 250 and self.bot_current_bank > 250:
-            self.activate_bet_10()
-            self.activate_bet_50()
-            self.activate_bet_100()
-            self.activate_bet_250()
-            self.activate_bet_500()
-            self.inactivate_bet_1000()
-            self.activate_bet_all()
-            self.update()
-        elif self.pl_bank <= 250 and self.bot_current_bank <= 250 and self.pl_bank > 100 and self.bot_current_bank > 100:
+        elif self.pl_bank >= 250 and self.bot_current_bank >= 250:
             self.activate_bet_10()
             self.activate_bet_50()
             self.activate_bet_100()
@@ -123,7 +114,7 @@ class Main_data:
             self.inactivate_bet_1000()
             self.activate_bet_all()
             self.update()
-        elif self.pl_bank <= 100 and self.bot_current_bank <= 100 and self.pl_bank > 50 and self.bot_current_bank > 50:
+        elif self.pl_bank >= 100 and self.bot_current_bank >= 100:
             self.activate_bet_10()
             self.activate_bet_50()
             self.activate_bet_100()
@@ -132,7 +123,7 @@ class Main_data:
             self.inactivate_bet_1000()
             self.activate_bet_all()
             self.update()
-        elif self.pl_bank <= 50 and self.bot_current_bank <= 50 and self.pl_bank > 10 and self.bot_current_bank > 10:
+        elif self.pl_bank >= 50 and self.bot_current_bank >= 50:
             self.activate_bet_10()
             self.activate_bet_50()
             self.inactivate_bet_100()

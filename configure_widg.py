@@ -64,6 +64,7 @@ class Configurate(gaming_conf.Main_data):
 
     def activate_all_btts(self):
         self.activate_btt()
+        self.activate_back_btt()
         self.activate_bet_10()
         self.activate_bet_50()
         self.activate_bet_100()
@@ -74,6 +75,7 @@ class Configurate(gaming_conf.Main_data):
 
     def inactivate_all_btts(self):
         self.inactivate_btt()
+        self.inactivate_back_btt()
         self.inactivate_bet_10()
         self.inactivate_bet_50()
         self.inactivate_bet_100()

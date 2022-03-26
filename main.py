@@ -246,6 +246,12 @@ class App(tk.Tk, configure_widg.Configurate):
         self.bet_all['state'] = tk.DISABLED
         self.update()
 
+    def inactivate_back_btt(self):
+        self.back_to_choose_btt['state'] = tk.DISABLED
+
+    def activate_back_btt(self):
+        self.back_to_choose_btt['state'] = tk.NORMAL
+
     def activate_bet_10(self):
         self.bet_10['state'] = tk.NORMAL
         self.update()
